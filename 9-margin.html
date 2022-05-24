@@ -1,0 +1,91 @@
+<!-- 
+   ---- margin at auto ---------
+center : m-auto
+left : ml-auto
+right : mr-auto 
+
+-------margin responsivens at breakpoint
+        center              left                right
+ xl => m-xl-auto         m-xl-left           m-xl-right
+ lg => m-lg-auto         m-lg-left           m-lg-right
+ md => m-md-auto         m-md-left           m-md-right
+ sm => m-sm-auto         m-sm-left           m-sm-right
+
+ ------margin on specific position(top bottom right left) without responsive (size 0-5)
+ margin(4sides) => m-size ex: m-5
+ margin -right  => mr-5
+ margin -left   => ml-5
+ margin -top    => mt-5
+ margin -bottom => mb-5
+
+ margin size with responsive
+        margin          margin-right      margin-left           margin-top      margin-bottom
+xl => m-xl-5                mr-xl-5          ml-xl-5                  mt-xl-5          mb-xl-5
+lg => m-lg-5                mr-lg-5          ml-lg-5                  mt-lg-5          mb-lg-5
+md => m-md-5                mr-md-5          ml-md-5                  mt-md-5          mb-md-5
+sm => m-sm-5                mr-sm-5          ml-sm-5                  mt-sm-5          mb-sm-5
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css " rel= "stylesheet " 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+
+    <style>
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .blue{
+            background-color: blueviolet;
+        }
+        .bggreen{
+            border: 2px solid green;
+        }
+        
+        .bgblue{
+            border: 2px solid blue;
+        }
+        
+        .bgred{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row bgblue">
+            <div class="col-sm-3 m-auto green">margin auto it means both left and right margin will same <br>
+            and it will come at center</div>
+        </div>
+<br>
+        <div class="row bggreen">
+            <div class="col-3 ml-auto blue"> margin left it means at left the margin will be auto</div>
+            <div class="col-3 mr-auto  red"> margin left it means at left the margin will be auto</div>
+        </div>
+<br>
+four side margin
+        <div class="row bgred">
+            <div class="col-3 m-5  blue"> It is a long established fact that a reader will be distracted</div>
+            <div class="col-3  red">It is a long established fact that a reader will be distracted</div>
+            <div class="col-3 m-3 green">It is a long established fact that a reader will be distracted</div>
+        </div>
+
+        <br>
+        <div class="row bgblue">
+            <div class="col-3 mt-xl-4 red">It is a long established fact that a reader will be distracted</div>
+            <div class="col-3 m-md-2  blue"> It is a long established fact that a reader will be distracted</div>
+            <div class="col-3 m- green">It is a long established fact that a reader will be distracted</div>
+        </div>
+    </div>
+</body>
+</html>
