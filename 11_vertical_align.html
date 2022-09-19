@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css " rel= "stylesheet " 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <style>
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .blue{
+            background-color: blueviolet;
+        }
+        .bgblue{
+            border: 2px solid blue;
+        }
+        
+        .bgred{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- no break point: align-items-center/start/end/stretch/baseline
+        with break point: align-items-break_point-center/etc..
+                      ex: alignitems-md-center
+    -->
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-3  green">
+                <h1>col 1</h1>who seeks after it and wants to have it, simply because it is pain
+            </div>
+            <div class="col-3 red">
+                <small>col 1</small>
+                There is no one who loves pain itself, who seeks after it and
+                There is no one who loves pain itself, who seeks after it and
+                There is no one who loves pain itself, who seeks after it and
+            </div>
+            <div class="col-md-3 blue">
+                <h1>col 1</h1>
+                There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain
+                There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain
+                There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain
+            </div>
+        </div>
+
+        <!-- 
+            align content is uses when we specifiy the height as col should not get stectch we use this
+            without responsive  align-content-start/end/center/between/around/stetch
+            with responsive align-content-sm-center/etc...
+         -->
+        <div class="row mt-5 bgblue align-content-around" style="height: 400px;">
+            <div class="col-3 yellow">
+                It is a long established fact that a reader will be distracted
+            </div>
+            <div class="col-4 green">
+                There is no one who loves pain itself, who seeks after it and wants to have it, simply
+            </div>
+            <div class="col-2 red">
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also
+                reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+            </div>
+            <div class="col-5 blue">
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also
+                reproduced in
+            </div>
+            <div class="col-2 bg-info">
+                There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain
+            </div>
+        </div>
+
+        <!-- 
+            it will work as align iitems but on a single item i will work
+            without-responsive align-selft-start/end/center/stretch/baseline
+            with responsive align-self-sm-end
+         -->
+        <div class="row bgred m-5" style="height: 300px;">
+            <div class="col-3 blue align-self-start">
+                It is a long established fact that a reader will be distracted
+            </div>
+            <div class="col-3 green align-self-center">
+                It is a long established fact that a reader will be distracted
+            </div>
+            <div class="col-3 yellow align-self-end">
+                It is a long established fact that a reader will be distracted
+            </div>
+        </div>
+    </div>
+</body>
+</html>
